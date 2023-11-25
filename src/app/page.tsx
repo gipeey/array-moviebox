@@ -1,5 +1,6 @@
 import { Hero } from "@/app/components";
 import { MovieCard, LinkCustom } from "@/components";
+import { revalidateTag } from "next/cache";
 
 export default async function Home() {
   const movieList = await getData();
@@ -34,14 +35,17 @@ async function getData() {
       "Content-Type": "application/json",
       Authorization: "Bearer " + process.env.API_TOKEN,
     },
+    next: {
+      tags: ["AllMovies"],
+    },
   });
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
 
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
     throw new Error("Failed to fetch data");
   }
+
+  revalidateTag("AllMovies");
 
   const data = await res.json();
 
