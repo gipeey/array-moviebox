@@ -19,7 +19,7 @@ const MovieCard = ({ data }: { data: MovieCardProps }) => {
   const year = moment(releaseDate).format("YYYY");
 
   return (
-    <div className="flex flex-col md:gap-3 gap-2 max-w-[300px]">
+    <div className="flex flex-col md:gap-3 gap-1 max-w-[300px]">
       <div className="relative w-full h-auto aspect-[27/40] object-cover lg:p-4 md:p-2 p-2">
         <Link
           // ! Change href

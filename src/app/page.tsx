@@ -17,7 +17,7 @@ export default async function Home() {
             <LinkCustom text="See more" href="#" />
           </div>
 
-          <div className="grid lg:grid-cols-4 lg:gap-x-20 lg:gap-y-10 md:grid-cols-3 md:gap-x-8 md:gap-y-6 grid-cols-2 gap-x-4 gap-y-4">
+          <div className="grid lg:grid-cols-4 lg:gap-x-20 lg:gap-y-10 md:grid-cols-3 md:gap-x-8 md:gap-y-6 grid-cols-2 gap-x-4 gap-y-6">
             {movieList.items.map((data: MovieCardProps) => (
               <MovieCard data={data} key={data.id} />
             ))}
