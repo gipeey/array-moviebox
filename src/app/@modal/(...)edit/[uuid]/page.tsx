@@ -128,12 +128,6 @@ const FormsEditModal = async ({ params }: { params: { uuid: string } }) => {
 
           <div className="py-4 flex gap-4">
             <Button type="submit" text="Edit Movie" className="text-white" />
-            <Button
-              type="submit"
-              text="Delete Movie"
-              className="text-gray-400 bg-white"
-              onClick={() => console.log("click")}
-            />
           </div>
 
           <p aria-live="polite" className="sr-only" role="status">
