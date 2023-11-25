@@ -41,12 +41,12 @@ const Modal = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       ref={overlay}
-      className="fixed z-50 inset-0 mx-auto bg-black/50"
+      className="fixed z-50 inset-0 mx-auto bg-black/50 overflow-y-scroll h-screen"
       onClick={handleClick}
     >
       <section
         ref={wrapper}
-        className="relative top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 max-w-5xl w-full bg-white rounded-xl shadow-xl"
+        className="relative md:top-1/2 start-1/2 -translate-x-1/2 md:-translate-y-1/2 max-w-5xl w-full bg-white rounded-xl shadow-xl"
       >
         <button
           className="absolute end-4 top-[30px] -translate-y-1/2 w-[30px] h-[30px] hover:bg-gray-300 rounded-full flex items-center justify-center"

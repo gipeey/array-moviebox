@@ -19,7 +19,7 @@ const SubmitButton = () => {
       type="submit"
       text={pending ? "loading..." : "Add Movie"}
       disabled={pending}
-      className="text-white"
+      className="text-white w-full md:w-fit justify-center"
     />
   );
 };
@@ -39,7 +39,7 @@ const AddForms = ({ data }: { data?: MovieCardProps }) => {
 
   return (
     <form action={formAction} method="post">
-      <div className="grid grid-cols-2 gap-x-8">
+      <div className="grid md:grid-cols-2 gap-x-8 pb-8">
         <input
           type="text"
           name="uuid"
