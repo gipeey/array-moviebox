@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import { Nav } from "@/app/components";
+import { Footer, Nav } from "@/app/components";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -21,6 +21,8 @@ export default function RootLayout(props: {
 
         {props.children}
         {props.modal}
+
+        <Footer />
       </body>
     </html>
   );
