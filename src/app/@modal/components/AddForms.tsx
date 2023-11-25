@@ -54,7 +54,13 @@ const AddForms = ({ data }: { data?: MovieCardProps }) => {
           defaultValue={data?.title}
           required
         />
-        <FormInput label="ID" id="id" name="id" defaultValue="id" required />
+        <FormInput
+          label="ID"
+          id="id"
+          name="id"
+          defaultValue={data?.id}
+          required
+        />
 
         <FormSelect label="Type" id="type" name="type" required />
         <FormInput
