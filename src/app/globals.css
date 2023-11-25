@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .main-container {
-  @apply max-w-screen-xl mx-auto mt-[70px] mb-[120px] flex flex-col gap-[70px];
+  @apply lg:max-w-screen-xl md:max-w-screen-lg md:px-8 sm:max-w-screen-md sm:px-6 px-4 mx-auto md:mt-[70px] mt-10 md:mb-[120px] mb-20 flex flex-col gap-[70px];
 }
 
 .section-title {
   @apply text-4xl font-bold;
+}
+
+.container {
+  @apply lg:max-w-screen-xl md:max-w-screen-lg md:px-8 sm:max-w-screen-md sm:px-6 px-4;
 }

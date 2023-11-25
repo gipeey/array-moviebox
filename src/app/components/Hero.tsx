@@ -15,7 +15,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 -z-10 bg-black/50" />
 
-      <div className="max-w-screen-xl w-full mx-auto">
+      <div className="container w-full mx-auto">
         <div className="text-white flex flex-col gap-4">
           <h3 className="text-5xl max-w-[404px] leading-[56px] font-bold">
             John Wick 3 : Parabellum
